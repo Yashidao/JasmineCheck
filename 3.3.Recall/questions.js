@@ -1,135 +1,185 @@
 let selectElementsStartingWithA = (array) => {
-    return 'Write your method here';
+    let arr = []
+    let x = 0;
+    for (i = 0; i < array.length; i++) {
+        if (array[i][0] == "a") {
+            arr[x] = array[i];
+            x++
+        }
+    }
+    return arr;
 }
 
 let selectElementsStartingWithVowel = (array) => {
-    return 'Write your method here';
+    let arr = []
+    let alph = ["a", "e", "i", "o", "u", "y"]
+    let x = 0;
+    for (i = 0; i < array.length; i++) {
+        for (j = 0; j < alph.length; j++) {
+            if (array[i][0] == alph[j]) {
+                arr[x] = array[i];
+                x++
+            }
+        }
+    }
+    return arr;
 }
 
 let removeNullElements = (array) => {
-    return 'Write your method here';
+    let arr = []
+    let x = 0
+    for (i = 0; i < array.length; i++) {
+        if (array[i] != null) {
+            arr[x] = array[i]
+            x++
+        }
+    }
+    return arr
 }
 
 let removeNullAndFalseElements = (array) => {
-    return 'Write your method here';
+
+    return array.filter(el => { return (el != null && el !== false) })
 }
 
 let reverseWordsInArray = (array) => {
-    return 'Write your method here';
+    let arr = []
+    let word = ""
+    let mot = ""
+    for (i = 0; i < array.length; i++) {
+        word = array[i]
+        for (j = word.length - 1; j >= 0; j--) {
+            mot += word[j]
+        }
+        arr[i] = mot
+        mot = ""
+    }
+    return arr
 }
 
 let everyPossiblePair = (array) => {
-    return 'Write your method here';
+    return
 }
 
 let allElementsExceptFirstThree = (array) => {
-    return 'Write your method here';
+    return array.slice(3, 8)
 }
 
 let addElementToBeginning = (array, element) => {
-    return 'Write your method here';
+    array.unshift(element)
+    return array
 }
 
 let sortByLastLetter = (array) => {
-    return 'Write your method here';
+    return
 }
 
 let getFirstHalf = (string) => {
-    return 'Write your method here';
+    let arr = []
+    let x = string.length / 2
+    for (i = 0; i < string.length; i++) {
+        arr[i] = string[i]
+    }
+    for (j = arr.length; j > x; j--) {
+       arr.pop()
+    }
+    arr = arr.join("")
+    return arr
 }
 
 let makeNegative = (number) => {
-    return 'Write your method here';
+
+    return -Math.abs(number)
 }
 
 let numberOfPalindromes = (array) => {
-    return 'Write your method here';
+    return
 }
 
 let shortestWord = (array) => {
-    return 'Write your method here';
+    return
 }
 
 let longestWord = (array) => {
-    return 'Write your method here';
+    return
 }
 
 let sumNumbers = (array) => {
-    return 'Write your method here';
+    return
 }
 
 let repeatElements = (array) => {
-    return 'Write your method here';
+    return
 }
 
 let stringToNumber = (string) => {
-    return 'Write your method here';
+    return
 }
 
 let calculateAverage = (array) => {
-    return 'Write your method here';
+    return
 }
 
 let getElementsUntilGreaterThanFive = (array) => {
-    return 'Write your method here';
+    return
 }
 
 let convertArrayToObject = (array) => {
-    return 'Write your method here';
+    return
 }
 
 let getAllLetters = (array) => {
-    return 'Write your method here';
+    return
 }
 
 let swapKeysAndValues = (object) => {
-    return 'Write your method here';
+    return
 }
 
 let sumKeysAndValues = (object) => {
-    return 'Write your method here';
+    return
 }
 
 let removeCapitals = (string) => {
-    return 'Write your method here';
+    return
 }
 
 let roundUp = (number) => {
-    return 'Write your method here';
+    return
 }
 
 let formatDateNicely = (date) => {
-    return 'Write your method here';
+    return
 }
 
 let getDomainName = (string) => {
-    return 'Write your method here';
+    return
 }
 
 let titleize = (string) => {
-    return 'Write your method here';
+    return
 }
 
 let checkForSpecialCharacters = (string) => {
-    return 'Write your method here';
+    return
 }
 
 let squareRoot = (number) => {
-    return 'Write your method here';
+    return
 }
 
 let factorial = (number) => {
-    return 'Write your method here';
+    return
 }
 
 let findAnagrams = (string) => {
-    return 'Write your method here';
+    return
 }
 
 let convertToCelsius = (number) => {
-    return 'Write your method here';
+    return
 }
 
 let letterPosition = (array) => {
-    return 'Write your method here';
+    return
 }
